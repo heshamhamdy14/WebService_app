@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.islamiccenter.webservice_app.MainActivity">
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_weight="1"
+        android:text="Button"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="-7dp" />
+
+    <ListView
+        android:id="@+id/movielist"
+        android:layout_width="368dp"
+        android:layout_height="445dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/radioButtonReleaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="-1dp"
+        android:text="ReleaseDateAsc"
+        app:layout_constraintHorizontal_bias="0.02"
+        app:layout_constraintLeft_toRightOf="@+id/radioButton2"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <RadioButton
+        android:id="@+id/radioButtonpop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:text="RadioButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteY="1dp" />
+
+</android.support.constraint.ConstraintLayout>
