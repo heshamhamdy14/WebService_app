@@ -37,8 +37,8 @@ public class MoviesArrayAdapter extends ArrayAdapter<movieDataModel> {
         ImageView imageView= (ImageView)convertView.findViewById(R.id.imageView);
         Picasso.with(getContext()).load("http://image.tmdb.org/t/p/w500/"+movieDataModel.getPosterPath()).into(imageView);
 
-        TextView textViewTitle=(TextView)convertView.findViewById(R.id.title);
-        TextView textViewOver=(TextView)convertView.findViewById(R.id.textView3);
+        TextView textViewTitle=(TextView)convertView.findViewById(R.id.textView_title);
+        TextView textViewOver=(TextView)convertView.findViewById(R.id.textviewover);
         textViewOver.setText(movieDataModel.getOverview());
         textViewTitle.setText(movieDataModel.getTitle());
 

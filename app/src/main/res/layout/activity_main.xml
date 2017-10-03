@@ -12,44 +12,74 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="16dp"
         android:layout_weight="1"
-        android:text="Button"
+        android:text="search"
         app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="-7dp" />
+        tools:layout_editor_absoluteY="30dp" />
 
     <ListView
         android:id="@+id/movielist"
-        android:layout_width="368dp"
-        android:layout_height="445dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="58dp" />
+        android:layout_width="382dp"
+        android:layout_height="313dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="190dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="year"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RadioGroup" />
 
     <RadioGroup
         android:id="@+id/RadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
+        <RadioButton
+            android:id="@+id/radioButtonReleaseDateasc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="-1dp"
+            android:layout_weight="1"
+            android:text="ReleaseDateAsc"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/popularityasc"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteY="113dp" />
+
+        <RadioButton
+            android:id="@+id/popularityasc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="popularityasc" />
+
+        <RadioButton
+            android:id="@+id/radioButtonReleaseDatedesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ReleaseDatedesc" />
+
+        <RadioButton
+            android:id="@+id/popularitydesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:text="popularitydesc"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_editor_absoluteY="1dp" />
+
     </RadioGroup>
-
-    <RadioButton
-        android:id="@+id/radioButtonReleaseDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="-1dp"
-        android:text="ReleaseDateAsc"
-        app:layout_constraintHorizontal_bias="0.02"
-        app:layout_constraintLeft_toRightOf="@+id/radioButton2"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_editor_absoluteY="0dp" />
-
-    <RadioButton
-        android:id="@+id/radioButtonpop"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_weight="1"
-        android:text="RadioButton"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteY="1dp" />
 
 </android.support.constraint.ConstraintLayout>

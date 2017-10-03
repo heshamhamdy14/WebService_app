@@ -4,7 +4,11 @@ package com.example.islamiccenter.webservice_app.DataModels;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class movieDataModel {
+import java.io.Serializable;
+
+public class movieDataModel implements Serializable {
+    private static final long serialVersionUID = 46543445;
+
 
     @SerializedName("vote_count")
     @Expose
@@ -71,11 +75,11 @@ public class movieDataModel {
         this.video = video;
     }
 
-    public Double getVoteAverage() {
+    public double getVoteAverage() {
         return voteAverage;
     }
 
-    public void setVoteAverage(Double voteAverage) {
+    public void setVoteAverage(double voteAverage) {
         this.voteAverage = voteAverage;
     }
 
