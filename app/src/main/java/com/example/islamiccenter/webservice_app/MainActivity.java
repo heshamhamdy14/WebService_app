@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                 }
 
-                String url = "http://api.themoviedb.org/3/discover/movie?api_key=ab71bd22b9e87623e779800766e9ef81&language=en-US&sort_by=" + sort_By_Varible + "&page=1";
+                String url = "http://api.themoviedb.org/3/discover/movie?api_key=ab71bd22b9e87623e779800766e9ef81&language=en-US&sort_by=" + sort_By_Varible + "&page=1&year="+YearList;
 
                 executeWebService(url);
 
